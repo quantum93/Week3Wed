@@ -1,0 +1,10 @@
+|* spec                                                                                                    | Input                             | Output
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+|The program recognizes a single vowel.                                                                    | Example: "a"                      | Example: 1
+|The program ignores non-alphabetical characters, since they cannot be vowels.                             | Example: "4%"                     | Example: 0
+|The program recognizes a single vowel, regardless of case.                                                | Example: "A"                      | Example: 1
+|The program recognizes multiple vowels in a single word.                                                  | Example: "cater"                  | Example: 2
+|The program recognizes a single vowel in a multiple-character word.                                       | Example: "cat"                    | Example: 1
+|The program recognizes vowels in a multiple-word sentence.                                                | Example: "cats catered the event" | Example: 7
+|The program recognizes vowels in a multiple-word sentence, regardless of capitalization.                  | Example: "CATS CATERED THE EVENT" | Example: 7
+|The program recognizes all vowels in a multiple-word sentence, regardless of inconsistent capitalization. | Example: "CaTS CATEReD ThE EveNT" | Example: 7
