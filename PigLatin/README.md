@@ -30,13 +30,17 @@ It runs the input through the back end logic and returns a sentence of Pig Latin
 | make string type result. (use append rather than text to avoid overwrite)  | ['3dad', 'areay', 'bugsway']     | 3dad areay bugsway                        |
 | For word beginning with consonants, find index of vowel in word            | thread                           | index of e                                |
 | return word + consonants[i] + ....+ consonants[index of vowel] + 'ay'      | thread                           | threadthray                               |
+...
+...
+| since they do not start with consonants or vowels in multiple words.       | 3dad are bugs                    | 3dad areway oolcay                        |
+| The program adds "way" to multiple words beginning with a vowel.           | island is awesome                | islandway isway awesomeway                |
+| The program move consonant to the end of word and adds "ay" to multiple    |                                  |                                           |
+| words beginning with a consonants.                                         | dad is so cool                   | adday isway osay oolcay                   |
+...
+...
+| Everything works well!                                                     | my mom is amazing queen          | ymay ommay isway amazingway eenquay       |
 
-
-| since they do not start with consonants or vowels in multiple words.       | 3dad are bugs                    | 3dad areay bugsway                        |
-| The program adds "ay" to multiple words beginning with a vowel.            | island is awesome                | islanday isay awesomeay                   |
-| The program adds "way" to multiple words beginning with a consonants.      | dad is so cool                   | dadway isay soway coolway                 |
-
-| The program does nothing to non-alphabetical characters,             | Example Input: 2              | Example Output:Please enter letters                |                                                                      |                               |
+Check logic for consonants case with "popcorn", "sport", "queen", "squeal", "lux".
 
 ## Setup/Installation Requirements
 
